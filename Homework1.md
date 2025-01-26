@@ -92,7 +92,14 @@ WHERE trip_distance > 10;
 Answer is `35189`
 
 ## Question 4
-
+Which was the pick up day with the longest trip distance? Use the pick up time for your calculations.
+``` SQL
+SELECT DISTINCT DATE(lpep_pickup_datetime) AS pickup_day, MAX(trip_distance) AS longest_dist
+FROM green_taxi_trips
+GROUP BY pickup_day
+ORDER BY longest_dist DESC
+LIMIT 1;
+```
 
 ## Question 5
 Which were the top pickup locations with over 13,000 in total_amount (across all trips) for 2019-10-18?
@@ -127,6 +134,7 @@ GROUP BY t."DOLocationID", z."Zone"
 ORDER BY max_tip DESC
 LIMIT 1;
 ```
+## Question 7
 
 
 
