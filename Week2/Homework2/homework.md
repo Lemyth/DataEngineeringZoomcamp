@@ -4,18 +4,7 @@
 
 Within the execution for Yellow Taxi data for the year 2020 and month 12: what is the uncompressed file size (i.e. the output file yellow_tripdata_2020-12.csv of the extract task)?
 
-``` bash 
-    # Linux command to create a python:3.12.8 container in interactive mode 
-
-    docker run -it --entrypoint /bin/bash python:3.12.8
-```
-
-We will use this bash command to get the pip version : 
-
-``` bash
-# inside container 
-pip --version
-```
+![alt text](image1.png)
 
 ## Question 2
 
