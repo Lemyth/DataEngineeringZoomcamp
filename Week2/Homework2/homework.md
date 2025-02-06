@@ -50,5 +50,3 @@ Answer is `1734051`
 How would you configure the timezone to New York in a Schedule trigger?
 In the documentation it is stated the format of the timezone property is IANA format.
 So the correct answer is : Add a `timezone property` set to `America/New_York` in the Schedule trigger configuration
-
-## Question 7
