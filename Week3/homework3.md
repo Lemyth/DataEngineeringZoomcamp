@@ -97,5 +97,6 @@ The estimated bytes is ![alt text](image6.png)
 
 ## Question 7
 Where is the data stored in the External Table you created?
-The external table's data are stored in 
+
+- The external table's data are stored in GCP bucket
 
