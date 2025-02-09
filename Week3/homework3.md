@@ -26,9 +26,6 @@ FROM `zoomcampde-449800.zoomcamp.yellow_tripdata_nonpartitioned`;
 
 ```
 
-
-![alt text](image1.png)
-
 ## Question 2
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.
 What is the estimated amount of data that will be read when this query is executed on the External Table and the Table?
@@ -52,7 +49,7 @@ FROM `zoomcampde-449800.zoomcamp.yellow_tripdata_nonpartitioned`;
 ```
  The estimated bytes is 
 ![alt text](image3.png)
-Answer is `24648499`
+
 ``` SQL
  --Query to retrieve the PULocationID and DOLocationID from the materialized table
 SELECT PULocationID, DOLocationID
@@ -87,7 +84,7 @@ SELECT DISTINCT(VendorID)
 FROM `zoomcamp.yellow_tripdata_nonpartitioned`
 WHERE DATE(tpep_dropoff_datetime) BETWEEN "2024-03-01" AND  "2024-03-15";
 ```
-The estimated bytes is 
+The estimated bytes is ![alt text](image5.png)
 
 - Query on the partitioned table
 ``` SQL
@@ -95,7 +92,7 @@ SELECT DISTINCT(VendorID)
 FROM `zoomcamp.yellow_tripdata_partitioned`
 WHERE DATE(tpep_dropoff_datetime) BETWEEN "2024-03-01" AND  "2024-03-15";
 ```
-The estimated bytes is 
+The estimated bytes is ![alt text](image6.png)
 
 
 ## Question 7
